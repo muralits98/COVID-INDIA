@@ -24,7 +24,7 @@ def job():
     sys.stdout = orig_stdout
     f.close()
 
-    f = open('out.txt')
+    f = open(file)
     line = f.readline()
     C = []
     while line:
@@ -44,7 +44,7 @@ def job():
 
     today1 = datetime.today().strftime('%d%m%Y')
     file = str(today1) + "COVIDIND.csv"
-    df.to_csv(file)
+    df.to_csv(file,index = False)
 
 # schedule.every(1).minutes.do(job)
 schedule.every(24).hours.do(job)
