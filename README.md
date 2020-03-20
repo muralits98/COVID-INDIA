@@ -5,7 +5,7 @@ Visualization here: https://muralits98.github.io/COVID-INDIA/
 
 Tasks:
 
-- [X] Automate updating the site at 9AM and 5AM everyday
+- [X] Automate updating the dataset at 9AM and 5AM everyday
 
 - [ ] Identify issues with the website and improve visualization
 
