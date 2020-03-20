@@ -1,4 +1,4 @@
-# COVID-INDIA
+# COVID-INDIA-DATASET
 This repo contains the daily dataset of COVID spread in India from https://www.mohfw.gov.in/
 
 Visualization here: https://muralits98.github.io/COVID-INDIA/
