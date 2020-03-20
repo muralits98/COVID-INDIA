@@ -1,7 +1,7 @@
 # COVID-INDIA
 This repo contains the daily dataset of COVID spread in India from https://www.mohfw.gov.in/
 
-Visualization here: https://drive.google.com/open?id=1bEVuTWv34u4PHzbc8Z63gQugtlk_IOdh&usp=sharing
+Visualization here: https://muralits98.github.io/COVID-INDIA/
 
 I noticed that there was no means to access historical data of the COVID Statistics in India and decided to keep track of it here. I wrote a script that will automatically pull the data and upload it here. I will update the dataset every day to keep track of the spread in India with the dataset from the Ministry of Health and Family Welfare.
 
