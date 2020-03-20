@@ -3,6 +3,16 @@ This repo contains the daily dataset of COVID spread in India from https://www.m
 
 Visualization here: https://muralits98.github.io/COVID-INDIA/
 
+Tasks:
+
+- [X] Automate updating the site at 9AM and 5AM everyday
+
+- [ ] Identify issues with the website and improve visualization
+
+- [ ] The below information also needs to be included in the dataset
+
+- [ ] Identify other sources and bring that data in here
+
 I noticed that there was no means to access historical data of the COVID Statistics in India and decided to keep track of it here. I wrote a script that will automatically pull the data and upload it here. I will update the dataset every day to keep track of the spread in India with the dataset from the Ministry of Health and Family Welfare.
 
 Total number of passengers screened at airport : 14,31,734
