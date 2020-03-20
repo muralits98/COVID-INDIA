@@ -5,13 +5,17 @@ import pandas as pd
 from datetime import datetime
 import schedule
 import time
+# import datetime
 
 # def job():
     # print("I'm working...")
 URL = 'https://www.mohfw.gov.in/'
 page = requests.get(URL)
+currentDT = datetime.now()
+
 today1 = datetime.today().strftime('%d%m%Y')
-file = str(today1) + "out.txt"
+
+file = str(today1)+str(currentDT.hour + 10) + "out.txt"
 orig_stdout = sys.stdout
 f = open(file, 'w')
 sys.stdout = f
@@ -43,7 +47,7 @@ df = pd.DataFrame(ANS[1:len(ANS)-1],columns=ANS[0])
 print(df)
 
 today1 = datetime.today().strftime('%d%m%Y')
-file = str(today1) + "COVIDIND.csv"
+file = str(today1) +str(currentDT.hour + 10)+ "COVIDIND.csv"
 df.to_csv(file,index = False)
 
 # schedule.every(1).minutes.do(job)
