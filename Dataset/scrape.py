@@ -38,7 +38,14 @@ def job():
 
     ANS = []
     i = 0
+    abc = 0
     while i<len(C):
+        if C[i] == 'S. No.':
+            abc = 1
+            break
+        else:
+            i = i+1
+    while i<len(C) and abc == 1:
         ab = C[i:i+6]
         ANS.append(ab)
         # print(ab)
@@ -52,12 +59,12 @@ def job():
 
 # schedule.every(1).minutes.do(job)
 # schedule.every(7).hours.do(job)
-schedule.every(1).day.at("00:00").do(job)
-schedule.every(1).day.at("07:00").do(job)
+# schedule.every(1).day.at("00:00").do(job)
+# schedule.every(1).day.at("07:00").do(job)
 
-while 1:
-    schedule.run_pending()
-    time.sleep(1)
+# while 1:
+#     schedule.run_pending()
+#     time.sleep(1)
 
 
-# job()
+job()
