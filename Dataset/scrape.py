@@ -5,6 +5,8 @@ import pandas as pd
 from datetime import datetime
 import schedule
 import time
+import subprocess as cmd
+
 # import datetime
 
 def job():
@@ -56,15 +58,27 @@ def job():
     today1 = datetime.today().strftime('%d%m%Y')
     file = str(today1) +str(currentDT.hour + 10)+ "COVIDIND.csv"
     df.to_csv(file,index = False)
+    # import subprocess as cmd
 
+    # cp = cmd.run("git add .", check=True, shell=True)
+    #print(cp)
+
+    # response = y
+    # message = "update the repository"
+
+    # # if response.startswith('n'):
+    # #     message = input("What message you want?\n")
+
+    # cp = cmd.run(f"git commit -m "Update" ", check=True, shell=True)
+    # cp = cmd.run("git push", check=True, shell=True)
 # schedule.every(1).minutes.do(job)
-# schedule.every(7).hours.do(job)
-# schedule.every(1).day.at("00:00").do(job)
-# schedule.every(1).day.at("07:00").do(job)
+# schedule.every().hours.do(job)
+schedule.every(1).day.at("00:00").do(job)
+schedule.every(1).day.at("07:00").do(job)
 
-# while 1:
-#     schedule.run_pending()
-#     time.sleep(1)
+while 1:
+    schedule.run_pending()
+    time.sleep(1)
 
 
-job()
+# job()
