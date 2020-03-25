@@ -1,11 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
+import os
 import sys
 import pandas as pd
 from datetime import datetime
 import schedule
 import time
 import subprocess as cmd
+import subprocess
 
 # import datetime
 
@@ -58,6 +60,7 @@ def job():
     today1 = datetime.today().strftime('%d%m%Y')
     file = str(today1) +str(currentDT.hour + 10)+ "COVIDIND.csv"
     df.to_csv(file,index = False)
+
     # import subprocess as cmd
 
     # cp = cmd.run("git add .", check=True, shell=True)
@@ -71,7 +74,7 @@ def job():
 
     # cp = cmd.run(f"git commit -m "Update" ", check=True, shell=True)
     # cp = cmd.run("git push", check=True, shell=True)
-# schedule.every(1).minutes.do(job)
+# # schedule.every(1).minutes.do(job)
 # schedule.every().hours.do(job)
 schedule.every(1).day.at("00:00").do(job)
 schedule.every(1).day.at("07:00").do(job)
@@ -81,4 +84,4 @@ while 1:
     time.sleep(1)
 
 
-# job()
+job()
