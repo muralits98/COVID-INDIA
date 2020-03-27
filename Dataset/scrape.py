@@ -75,12 +75,12 @@ def job():
     # cp = cmd.run("git push", check=True, shell=True)
 # # schedule.every(1).minutes.do(job)
 # schedule.every().hours.do(job)
-# schedule.every(1).day.at("00:00").do(job)
-# schedule.every(1).day.at("07:00").do(job)
+schedule.every(1).day.at("00:00").do(job)
+schedule.every(1).day.at("07:00").do(job)
 
-# while 1:
-#     schedule.run_pending()
-#     time.sleep(1)
+while 1:
+    schedule.run_pending()
+    time.sleep(1)
 
 
-job()
+# job()
