@@ -4,7 +4,7 @@ This repo contains the daily dataset of COVID spread in India from https://www.m
 Visualization here: https://muralits98.github.io/COVID-INDIA/
 
 ## File Name Format
-Month + Day + Year + Hour (In 24 hour Format IST) + COVIDIND
+Day + Month + Year + Hour (In 24 hour Format IST) + COVIDIND
 
 
 Tasks:
