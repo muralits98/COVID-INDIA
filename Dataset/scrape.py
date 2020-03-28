@@ -80,7 +80,7 @@ schedule.every(1).day.at("07:00").do(job)
 
 while 1:
     schedule.run_pending()
-    time.sleep(1)
+    time.sleep(10)
 
 
 # job()
