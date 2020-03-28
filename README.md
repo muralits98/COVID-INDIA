@@ -7,7 +7,7 @@ Visualization here: https://muralits98.github.io/COVID-INDIA/
 Day + Month + Year + Hour (In 24 hour Format IST) + COVIDIND
 
 
-Tasks:
+## Tasks:
 
 - [X] Automate updating the dataset at 9AM and 5AM everyday
 
