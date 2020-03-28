@@ -3,6 +3,10 @@ This repo contains the daily dataset of COVID spread in India from https://www.m
 
 Visualization here: https://muralits98.github.io/COVID-INDIA/
 
+## File Name Format
+Month + Day + Year + Hour (In 24 hour Format IST) + COVIDIND
+
+
 Tasks:
 
 - [X] Automate updating the dataset at 9AM and 5AM everyday
@@ -13,8 +17,7 @@ Tasks:
 
 - [ ] Identify other sources and bring that data in here
 
-## File Name Format
-Month + Day + Year + Hour (In 24 hour Format IST) + COVIDIND
+
 
 I noticed that there was no means to access historical data of the COVID Statistics in India and decided to keep track of it here. I wrote a script that will automatically pull the data and upload it here. I will update the dataset every day to keep track of the spread in India with the dataset from the Ministry of Health and Family Welfare.
 
